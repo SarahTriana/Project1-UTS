@@ -1,0 +1,157 @@
+         :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4895ef;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --success-color: #4cc9f0;
+            --error-color: #f72585;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(67, 97, 238, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(72, 149, 239, 0.1) 0%, transparent 20%);
+        }
+
+        .login-container {
+            background-color: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 420px;
+            padding: 40px;
+            transition: all 0.3s ease;
+        }
+
+        .login-container:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-icon {
+            font-size: 48px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .logo h1 {
+            color: var(--dark-color);
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .login-form .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .login-form .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--dark-color);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .login-form .input-group input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #e1e5ee;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+            background-color: #f8fafc;
+        }
+
+        .login-form .input-group input:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(72, 149, 239, 0.2);
+        }
+
+        .login-form .input-group input::placeholder {
+            color: #94a3b8;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .forgot-password a {
+            color: var(--accent-color);
+            font-size: 13px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .forgot-password a:hover {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .login-button:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .login-button:active {
+            transform: translateY(0);
+        }
+
+        .signup-link {
+            text-align: center;
+            font-size: 14px;
+            color: var(--dark-color);
+        }
+
+        .signup-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .signup-link a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 30px 20px;
+                margin: 0 15px;
+            }
+        }
+ 

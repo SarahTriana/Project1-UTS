@@ -1,0 +1,112 @@
+ body {
+            background: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .confirmation-section {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px 40px;
+            color: #222;
+        }
+        .confirmation-header h2 {
+            text-align: center;
+            margin-bottom: 8px;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: 1px;
+        }
+        .confirmation-header p {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+         .confirmation-details {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px dashed #4a6bff;
+        }
+
+        .confirmation-details h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .confirmation-details h3,
+        .next-steps h3 {
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #0052cc;
+        }
+        .detail-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .detail-label {
+            font-weight: 600;
+            color: #444;
+        }
+        .detail-value {
+            font-weight: 600;
+            color: #222;
+            max-width: 60%;
+            text-align: right;
+            word-wrap: break-word;
+        }
+        .next-steps ol {
+            padding-left: 20px;
+            color: #333;
+            font-size: 15px;
+        }
+        .next-steps li {
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        .btn-wrap {
+            margin-top: 35px;
+            text-align: center;
+        }
+        button {
+            background-color: #0052cc;
+            color: white;
+            border: none;
+            padding: 14px 40px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,82,204,0.3);
+        }
+        button:hover {
+            background-color: #003d99;
+        }
+         @media (max-width: 480px) {
+            .detail-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .detail-value {
+                text-align: left;
+                margin-top: 4px;
+                max-width: 100%;
+            }
+        }
